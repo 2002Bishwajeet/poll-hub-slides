@@ -1,6 +1,7 @@
 ---
 layout: end
 class: pink-bg
+hideInToc: true
 ---
 
 

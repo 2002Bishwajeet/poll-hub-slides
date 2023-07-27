@@ -60,9 +60,21 @@ hideInToc: true
 
 Poll hub is an real-time polling application that allows users to create polls and share them with their audience. The audience can then vote on the polls and the results are displayed in real-time.
 
+<img src ="poll-hub-transparent-large.png" class="h-3/5 mx-auto">
+
+<style>
+h1 {
+  color: #DB1A5A;
+  font-weight:600;
+}
+
+
+</style>
+
 
 ---
 src: ./pages/planning.md
+
 ---
 
 ---

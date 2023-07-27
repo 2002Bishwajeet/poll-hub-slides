@@ -18,6 +18,8 @@ class: dark-bg
 </style>
 
 ---
+hideInToc: true
+---
 
 # MVP
 
@@ -44,6 +46,7 @@ class: dark-bg
 
 ---
 transition: fade
+hideInToc: true
 ---
 
 # UI/UX Designing
@@ -66,13 +69,15 @@ transition: fade
 
 ---
 layout: image
-image: ./image.png
+image: ./penpot-home.png
+hideInToc: true
 ---
 
 
 ---
 layout: center
 class: dark-bg
+hideInToc: true
 ---
 
 # Tech Stack
@@ -125,7 +130,7 @@ hideInToc: true
 
 ---
 
-# Architecture
+# App Flow
 
 ```mermaid
 flowchart LR
@@ -139,13 +144,12 @@ flowchart LR
     E ---> G[Poll Screen]
     G --- F
     G --- H(Share Poll)
-    G -.- |Admin only| I(Stop Poll) --> C
+    G -.- |Creator only| I(Stop Poll) --> C
     J>Voter] --> |authenticated| G
     J ---> |unauthenticated| D
 
 ```
 
-<h3 mx-auto my-12 text-center class ='graphite-col'> Basic Web App Flow </h3>
 
 <style>
     h1{
