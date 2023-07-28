@@ -208,6 +208,8 @@ classDiagram
 </style>
 
 ---
+hideInToc: true
+---
 
 # What do we see
 
