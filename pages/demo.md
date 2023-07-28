@@ -5,7 +5,7 @@ class: graphite-col
 ---
 # Live Poll
 
-<img src ="hostedappqr.png" class="h-3/5">
+<img src ="/hostedappqr.png" class="h-3/5">
 <p> (Scan the QR to see the hosted version)</p>
 
 
