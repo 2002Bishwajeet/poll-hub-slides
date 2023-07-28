@@ -43,6 +43,8 @@ hideInToc: true
     }
 </style>
 
+<!-- We need to discuss the goals and minimial features for this project -->
+
 
 ---
 transition: fade
@@ -66,6 +68,13 @@ hideInToc: true
     }
  </style>
 
+<!-- Talk about Penpot
+    Open source design tool
+    alternative to Figma Adobe XD
+    Written in Clojure
+    have a good technical documentation and const improving
+    make designs get code at the instant
+ -->
 
 ---
 layout: image
@@ -126,7 +135,9 @@ hideInToc: true
     }
 </style>
 
-
+<!-- Svelte - web framework. Reactive and easy to use. Not setState useState stuffs.
+    Pink Design is Appwrite's open-source design system for building consistent and reusable user interfaces. Pink is designed to prioritize collaboration, dev experience, and accessibility.
+ -->
 
 ---
 

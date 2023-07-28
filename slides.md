@@ -8,6 +8,7 @@ transition: slide-left
 highlighter: shiki
 lineNumbers: false
 aspectRatio: 16:9
+colorSchema: light
 drawings:
   persist: false
 title: Poll Hub
@@ -53,6 +54,11 @@ hideInToc: true
 # Table of contents
 
 <Toc minDepth="1" maxDepth="5"></Toc>
+
+<!--
+It's more like a workshop/tutorial than a presentation.
+Have a starter template but its rusty.
+-->
 
 ---
 

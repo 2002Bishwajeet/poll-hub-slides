@@ -51,9 +51,10 @@ hideInToc: true
 # Starter Template
 
 
-<div class="w-5/12 mx-auto mt-12">
-<img src ="/github-starter-repo.png"/>
-</div>
+
+<img class =  "w-5/12" mx-auto mt-12 src ="/github-starter-repo.png"/>
+<a mt-12 mx-auto href="https://github.com/2002Bishwajeet/poll-hub/tree/starter-frontend"><h4>github.com/2002bishwajeet/poll-hub</h4></a>
+
 
 
 
@@ -64,6 +65,17 @@ hideInToc: true
         font-weight: 600;
 
     }
+
+    h4{
+      color: #F02C64;
+      text-align: center;
+    }
+
+    h4:hover{
+      color: #F02C64;
+      text-decoration: underline;
+    }
+   
 
     </style>
 
@@ -451,7 +463,7 @@ hideInToc: true
 classDiagram
     class Collection ["Question"] {
         +String id
-        +List~Options~ options
+        +List~Option~ options
     }
 
     class Option {
@@ -747,7 +759,7 @@ hideInToc: true
 
 # Create Poll Function
 
-```dart {55-106|6-17|58-66|68-78|37-50|80-96|98-102|103-106|all} {maxHeight: '445px' , lines: true}
+```dart {55-106|6-17|58-66|68-78|37-50|19-34|80-96|98-102|103-106|all} {maxHeight: '445px' , lines: true}
 import 'dart:convert';
 
 import 'package:dart_appwrite/dart_appwrite.dart';
