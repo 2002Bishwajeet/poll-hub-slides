@@ -636,7 +636,7 @@ hideInToc: true
 
 # Databases
 
-```ts {all|6-8|10-14|16-39|40-60|62-77|79-83|85-87|all} {maxHeight: '445px' , lines: true}
+```ts {all|6-8|10-14|16-39|40-60|62-79|81-85|87-89|all} {maxHeight: '445px' , lines: true}
 //services/database.ts
 import { Databases, Functions, type Client, Query } from 'appwrite';
 //Other imports 
@@ -698,19 +698,21 @@ export default class AppwriteDatabase implements DatabaseBase {
 		return result;
 	}
 
-	public streamPoll(poll: Poll, cb: (vote: Vote) => void | PromiseLike<void>) {
+	public streamPoll(poll: Poll, handleVotes: (vote: Vote) => void | PromiseLike<void>) {
 		return this.client.subscribe(
 			`databases.${VARS.DATABASE_ID}.collections.${poll.id}.documents`,
 			(event) => {
-				const votes = poll.options.map((opt) => {
-					if (event.payload[opt.id] != null || event.payload[opt.id] != undefined) {
-						return {
-							id: event.payload['$id'],
-							optionId: opt.id
-						};
-					}
-				});
-				return cb(votes[0]);
+				const votes = poll.options
+					.map((opt) => {
+						if (event.payload[opt.id] != null || event.payload[opt.id] != undefined) {
+							return {
+								id: event.payload['$id'],
+								optionId: opt.id
+							};
+						}
+					})
+					.filter((option) => !!option);
+				return handleVotes(votes[0]);
 			}
 		);
 	}
