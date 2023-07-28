@@ -87,6 +87,21 @@ hideInToc: true
 
   <!-- Discuss about creating a new project -->
 
+---
+
+# Appwrite Architecture
+
+<img src="/appwrite-architecture.png" class="mx-auto"/>
+
+
+<style>
+    h1{
+              color: #373d4d;
+        font-weight: 600;
+
+    }
+</style>
+
 
 ---
 hideInToc: true
